@@ -1,0 +1,85 @@
+turbo-frame#link_34671 h5 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+:root:not(.force-light):has(main .tabs) {
+	--bg: #220011;
+	--accent-bg: #440033;
+	--accent: #ff7f27;
+	--text: #EECCDD;
+	--code: #ff7f27;
+	--border: #FF77EE;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+turbo-frame#link_34671 {
+	--bg: #220011;
+	--accent-bg: #440033;
+	--accent: #ff7f27;
+	--text: #EECCDD;
+	--code: #ff7f27;
+	--border: #FF77EE;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body*:not(.comments-sidebar):has(main .tabs) {
+	background-color: #2d051b;
+}
+main*:not(.comments-sidebar):has(.tabs) {
+	margin: 0rem -2rem 0rem -2rem;
+	padding: 4rem 3rem 3rem 3rem;
+	background-color: color-mix(in srgb, var(--bg) 80%, transparent);
+	backdrop-filter: blur(20px);
+}
+.hang:has(main .tabs) {
+	display: none;
+}
+.link--description p {
+	display: none;
+}
+
+::-webkit-scrollbar { 
+	border-radius: 10px;
+}
+::-webkit-scrollbar-track:vertical {
+	background: var(--bg);
+	border-left: 1px solid var(--border);
+	border-right: 1px solid var(--border);
+}
+::-webkit-scrollbar-track:horizontal { 
+	background: var(--bg); 
+	border-top: 1px solid var(--border); 
+	border-bottom: 1px solid var(--border); 
+}
+::-webkit-scrollbar-thumb { 
+	background: var(--border); 
+	border-radius: 10px; 
+	transition: all 0.2s ease; 
+}
+::-webkit-scrollbar-thumb:hover { 
+	background: var(--code); 
+}
+.comments-sidebar { 
+	margin-left: -2rem;
+}
+
+turbo-frame#link_34671 .link {
+	position: relative; 
+	opacity: 1; 
+	border: 3px solid #FF77EE; 
+	border-radius: 15px; 
+	background: rgba(127,31,95,1); 
+	box-shadow: 0 0 15px rgba(255, 119, 238, 0.5), 0 0 25px rgba(68,0,51,1); 
+	font-size: 1.25em; 
+	transition: all 0.3s ease;
+}
+turbo-frame#link_34671 .link--device-in-use span { 
+	font-size: .8em;
+}
+turbo-frame#link_34671 .link--description > *:not(.embiggen-button-container) {
+	display: none;
+}
+turbo-frame#link_34671 .link--description p {
+	display: none;
+}
